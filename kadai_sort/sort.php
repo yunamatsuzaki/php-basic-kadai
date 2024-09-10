@@ -9,9 +9,10 @@
 <body>
     <p>
     <?php
-      function sort_2way($order) {
-          // ソートする配列
-          $nums = [15, 4, 18, 23, 10];
+        // ソートする配列
+        $nums = [15, 4, 18, 23, 10];
+
+        function sort_2way($nums,$order) {
 
           if ($order) {
               echo '昇順にソートします。<br>';
@@ -33,8 +34,8 @@
       }
 
       // 関数の呼び出し
-      sort_2way(TRUE);
-      sort_2way(FALSE);
+      sort_2way($nums,TRUE);
+      sort_2way($nums,FALSE);
     ?>
      </p>
 </body>
